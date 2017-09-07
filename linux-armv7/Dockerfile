@@ -14,7 +14,11 @@ RUN apt-get update && apt-get install -y \
   libbz2-dev:armhf \
   libexpat1-dev:armhf \
   ncurses-dev:armhf \
-  libssl-dev:armhf
+  libssl-dev:armhf \
+  libminiupnpc-dev:armhf \
+  libi2c-dev:armhf \
+  libcurl4-openssl-dev:armhf \
+  libsqlite3-dev:armhf
 
 ENV CROSS_TRIPLE arm-linux-gnueabihf
 ENV CROSS_ROOT /usr/${CROSS_TRIPLE}
